@@ -1,0 +1,9 @@
+services:
+  - name: my-react-app
+    type: static
+    repo: https://github.com/nandhubabu/My-Portfolio-using-React
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: NODE_VERSION
+        value: 18
